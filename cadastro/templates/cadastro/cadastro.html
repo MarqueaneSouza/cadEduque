@@ -1,0 +1,96 @@
+{% extends "cadastro/base.html" %}
+{% load static %}
+
+{% block 'head' %}
+<link rel="stylesheet" href="{% static 'cadastro/css/cadastro.css' %}">
+{% endblock %}
+
+{% block 'dashboard' %}
+<div class="container">
+    <div class="row">
+
+        <div class="col-md card-dashboard">
+            <p class="text-card">Adicionar professor</p>
+        </div>
+
+        <div class="col-md card-dashboard">
+            <p class="text-card">Atualizar professor</p>
+        </div>
+
+    </div>
+
+    <!-- CÓDIGO DO FORMS -->
+    <div class="adicionar-professor">
+        <form action="{% url 'cadastro' %}" method="POST"> {% csrf_token %}
+            <div class="row">
+                <div class="col-md">
+                    <p>Nome:</p>
+                    <input type="text" class="form-control" placeholder="Primeiro nome" name="nome">
+                </div>
+
+                <div class="col-md">
+                    <p>Sobrenome:</p>
+                    <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome">
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="row">
+                <div class="col-md">
+                    <p>Matrícula:</p>
+                    <input type="text" class="form-control" placeholder="Matrícula" name="matrícula">
+                </div>
+
+                <div class="col-md">
+                    <p>Cargo:</p>
+                    <input type="text" class="form-control" placeholder="Cargo" name="cargo">
+                </div>
+            </div>
+
+
+   
+   
+   
+   
+   
+   
+                <!-- 
+            <p>Cargo:</p>
+            <input type="cargo" class="form-control" placeholder="Cargo" name="cargo"> -->
+
+            <br>
+
+            <hr style="background-color:gray;">
+
+            <div class="add-cargo">
+                <h3>Função</h3>
+                <span class="btn-add-cargo" onclick="add_cargo()">+ Adicionar função</span>
+
+                <div id="form-cargo">
+
+                </div>
+
+            </div>
+
+            <!-- <p>Vínculo:</p>
+            <input type="vínculo" class="form-control" placeholder="Vínculo" name="vínculo">
+
+            <br>
+
+            <p>Término do Contrato</p>
+            <input type="termino do contrato" class="form-control" placeholder="Término do Contrato" name="termino do contrato"> -->
+
+            <br>
+
+            <input type="submit" value="Cadastrar" class="btn-principal">
+
+        </form>
+
+    </div>
+
+</div>
+
+<script src="{% static 'cadastro/js/cadastro.js' %}"></script>
+
+{% endblock %}
