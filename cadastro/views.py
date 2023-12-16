@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from .models import Cadastro, Funcao
+from .models import Professor, Funcao
 
-def cadastro(request):
+
+def add_professor(request):
     if request.method == 'GET':
         return render(request, 'cadastro/cadastro.html')
     elif request.method == 'POST':
@@ -14,16 +15,16 @@ def cadastro(request):
         turno = request.POST.getlist('turno')
 
     # adiciona no banco de dados
-        cadastro = Cadastro(
-            nome = nome,
-            sobrenome = sobrenome,
-            cargo = cargo
+        ptofessor = Professor(
+            nome=nome,
+            sobrenome=sobrenome,
+            cargo=cargo
         )
 
-        cadastro.save()
+        ptofessor.save()
 
         for funcao, lotacao, turno in zip(funcao, lotacao, turno):
-            func = Funcao(funcao=funcao, lotacao=lotacao, turno=turno, cadastro=cadastro)
+            func = Funcao(funcao=funcao, lotacao=lotacao, turno=turno, professor=ptofessor)
             func.save()
 
         return HttpResponse('teste')

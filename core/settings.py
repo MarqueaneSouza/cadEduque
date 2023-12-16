@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-$tjx1q8b9*ip85n31xh9rfor5s8c#&i=g19n_zox6^gzv2g4oh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -26,7 +26,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'cadastro',
+
+    'cadastro.apps.CadastroConfig',
 ]
 
 MIDDLEWARE = [
@@ -64,14 +65,14 @@ WSGI_APPLICATION = 'core.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-   'default': {
-   'ENGINE': 'django.db.backends.postgresql',
-          'NAME': 'cadeduque',
-          'USER': 'marqueane',
-          'PASSWORD': 'root2023',
-          'HOST': '127.0.0.1',
-          'PORT': '5434',
-     }
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'cadeduque',
+        'USER': 'marqueane',
+        'PASSWORD': 'root2023',
+        'HOST': '127.0.0.1',
+        'PORT': '5434',
+    }
 }
 
 
@@ -119,7 +120,8 @@ USE_TZ = True
 # Configuração de ambiente de desenvolvimento
 
 STATIC_URL = '/static/'  # endereço base dos arquivos estáticos
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # diretório que colocarei meus arquivos estáticos
+# diretório que colocarei meus arquivos estáticos
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 
 MEDIA_URL = '/media/'

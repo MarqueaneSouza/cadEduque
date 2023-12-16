@@ -1,6 +1,8 @@
 from django.urls import path
 from . import views
 
+app_name = 'cadastro'
+
 urlpatterns = [
-    path('', views.cadastro, name="cadastro")
+    path('', views.add_professor, name="cadastro")
 ]
