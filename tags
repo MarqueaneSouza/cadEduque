@@ -1,0 +1,95 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ALLOWED_HOSTS	core/settings.py	/^ALLOWED_HOSTS = ['*']$/;"	v
+AUTH_PASSWORD_VALIDATORS	core/settings.py	/^AUTH_PASSWORD_VALIDATORS = [$/;"	v
+BASE_DIR	core/settings.py	/^BASE_DIR = Path(__file__).resolve().parent.parent$/;"	v
+Cadastro	cadastro/models.py	/^class Cadastro(models.Model):$/;"	c
+CadastroConfig	cadastro/apps.py	/^class CadastroConfig(AppConfig):$/;"	c
+DATABASES	core/settings.py	/^DATABASES = {$/;"	v
+DEBUG	core/settings.py	/^DEBUG = True$/;"	v
+DEFAULT_AUTO_FIELD	core/settings.py	/^DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'$/;"	v
+Funcao	cadastro/models.py	/^class Funcao(models.Model):$/;"	c
+INSTALLED_APPS	core/settings.py	/^INSTALLED_APPS = [$/;"	v
+LANGUAGE_CODE	core/settings.py	/^LANGUAGE_CODE = 'pt-br'$/;"	v
+MEDIA_ROOT	core/settings.py	/^MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')$/;"	v
+MEDIA_URL	core/settings.py	/^MEDIA_URL = '\/media\/'$/;"	v
+MIDDLEWARE	core/settings.py	/^MIDDLEWARE = [$/;"	v
+Migration	cadastro/migrations/0001_initial.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	cadastro/migrations/0002_alter_funcao_turno.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	cadastro/migrations/0003_alter_funcao_turno.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	cadastro/migrations/0004_cadastro_matricula.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^class Migration(migrations.Migration):$/;"	c
+Migration	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^class Migration(migrations.Migration):$/;"	c
+ROOT_URLCONF	core/settings.py	/^ROOT_URLCONF = 'core.urls'$/;"	v
+SECRET_KEY	core/settings.py	/^SECRET_KEY = 'django-insecure-$tjx1q8b9*ip85n31xh9rfor5s8c#&i=g19n_zox6^gzv2g4oh'$/;"	v
+STATIC_ROOT	core/settings.py	/^STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')$/;"	v
+STATIC_URL	core/settings.py	/^STATIC_URL = '\/static\/'  # endereço base dos arquivos estáticos$/;"	v
+TEMPLATES	core/settings.py	/^TEMPLATES = [$/;"	v
+TIME_ZONE	core/settings.py	/^TIME_ZONE = 'America\/Sao_Paulo'$/;"	v
+USE_I18N	core/settings.py	/^USE_I18N = True$/;"	v
+USE_TZ	core/settings.py	/^USE_TZ = True$/;"	v
+WSGI_APPLICATION	core/settings.py	/^WSGI_APPLICATION = 'core.wsgi.application'$/;"	v
+__str__	cadastro/models.py	/^    def __str__(self) -> str:$/;"	m	class:Cadastro	file:
+__str__	cadastro/models.py	/^    def __str__(self) -> str:$/;"	m	class:Funcao	file:
+app_name	cadastro/urls.py	/^app_name = 'cadastro'$/;"	v
+application	core/asgi.py	/^application = get_asgi_application()$/;"	v
+application	core/wsgi.py	/^application = get_wsgi_application()$/;"	v
+cadastro	cadastro/models.py	/^    cadastro = models.ForeignKey(Cadastro, on_delete=models.CASCADE)$/;"	v	class:Funcao
+cadastro	cadastro/views.py	/^def cadastro(request):$/;"	f
+cargo	cadastro/models.py	/^    cargo = models.CharField(max_length=50)$/;"	v	class:Cadastro
+default_auto_field	cadastro/apps.py	/^    default_auto_field = 'django.db.models.BigAutoField'$/;"	v	class:CadastroConfig
+dependencies	cadastro/migrations/0001_initial.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	cadastro/migrations/0002_alter_funcao_turno.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	cadastro/migrations/0003_alter_funcao_turno.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	cadastro/migrations/0004_cadastro_matricula.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^    dependencies = [$/;"	v	class:Migration
+dependencies	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^    dependencies = [$/;"	v	class:Migration
+field	cadastro/migrations/0002_alter_funcao_turno.py	/^            field=models.CharField(),$/;"	v	class:Migration
+field	cadastro/migrations/0003_alter_funcao_turno.py	/^            field=models.CharField(max_length=50),$/;"	v	class:Migration
+field	cadastro/migrations/0004_cadastro_matricula.py	/^            field=models.CharField(max_length=8, null=True),$/;"	v	class:Migration
+field	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            field=models.CharField(default='abc', max_length=50),$/;"	v	class:Migration
+field	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            field=models.CharField(default='silva', max_length=50),$/;"	v	class:Migration
+field	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            field=models.CharField(default='ze', max_length=50),$/;"	v	class:Migration
+field	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            field=models.CharField(default=django.utils.timezone.now, max_length=8),$/;"	v	class:Migration
+fields	cadastro/migrations/0001_initial.py	/^            fields=[$/;"	v	class:Migration
+funcao	cadastro/models.py	/^    funcao = models.CharField(max_length=50)$/;"	v	class:Funcao
+initial	cadastro/migrations/0001_initial.py	/^    initial = True$/;"	v	class:Migration
+lotacao	cadastro/models.py	/^    lotacao = models.CharField(max_length=50)$/;"	v	class:Funcao
+main	manage.py	/^def main():$/;"	f
+matricula	cadastro/models.py	/^    matricula = models.CharField(max_length=8)$/;"	v	class:Cadastro
+menuBtnChange	cadastro/static/cadastro/js/base.js	/^function menuBtnChange() {$/;"	f
+model_name	cadastro/migrations/0002_alter_funcao_turno.py	/^            model_name='funcao',$/;"	v	class:Migration
+model_name	cadastro/migrations/0003_alter_funcao_turno.py	/^            model_name='funcao',$/;"	v	class:Migration
+model_name	cadastro/migrations/0004_cadastro_matricula.py	/^            model_name='cadastro',$/;"	v	class:Migration
+model_name	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^            model_name='cadastro',$/;"	v	class:Migration
+model_name	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            model_name='cadastro',$/;"	v	class:Migration
+name	cadastro/apps.py	/^    name = 'cadastro'$/;"	v	class:CadastroConfig
+name	cadastro/migrations/0001_initial.py	/^            name='Cadastro',$/;"	v	class:Migration
+name	cadastro/migrations/0001_initial.py	/^            name='Funcao',$/;"	v	class:Migration
+name	cadastro/migrations/0002_alter_funcao_turno.py	/^            name='turno',$/;"	v	class:Migration
+name	cadastro/migrations/0003_alter_funcao_turno.py	/^            name='turno',$/;"	v	class:Migration
+name	cadastro/migrations/0004_cadastro_matricula.py	/^            name='matricula',$/;"	v	class:Migration
+name	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^            name='cargo',$/;"	v	class:Migration
+name	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^            name='matricula',$/;"	v	class:Migration
+name	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^            name='nome',$/;"	v	class:Migration
+name	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^            name='sobrenome',$/;"	v	class:Migration
+name	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            name='cargo',$/;"	v	class:Migration
+name	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            name='matricula',$/;"	v	class:Migration
+name	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            name='nome',$/;"	v	class:Migration
+name	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            name='sobrenome',$/;"	v	class:Migration
+nome	cadastro/models.py	/^    nome = models.CharField(max_length=50)$/;"	v	class:Cadastro
+operations	cadastro/migrations/0001_initial.py	/^    operations = [$/;"	v	class:Migration
+operations	cadastro/migrations/0002_alter_funcao_turno.py	/^    operations = [$/;"	v	class:Migration
+operations	cadastro/migrations/0003_alter_funcao_turno.py	/^    operations = [$/;"	v	class:Migration
+operations	cadastro/migrations/0004_cadastro_matricula.py	/^    operations = [$/;"	v	class:Migration
+operations	cadastro/migrations/0005_remove_cadastro_cargo_remove_cadastro_matricula_and_more.py	/^    operations = [$/;"	v	class:Migration
+operations	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^    operations = [$/;"	v	class:Migration
+preserve_default	cadastro/migrations/0006_cadastro_cargo_cadastro_matricula_cadastro_nome_and_more.py	/^            preserve_default=False,$/;"	v	class:Migration
+sobrenome	cadastro/models.py	/^    sobrenome = models.CharField(max_length=50)$/;"	v	class:Cadastro
+turno	cadastro/models.py	/^    turno = models.CharField(max_length=50)$/;"	v	class:Funcao
+urlpatterns	cadastro/urls.py	/^urlpatterns = [$/;"	v
+urlpatterns	core/urls.py	/^urlpatterns = [$/;"	v

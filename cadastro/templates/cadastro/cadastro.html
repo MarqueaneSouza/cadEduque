@@ -21,7 +21,7 @@
 
     <!-- CÓDIGO DO FORMS -->
     <div class="adicionar-professor">
-        <form action="{% url 'cadastro' %}" method="POST"> {% csrf_token %}
+        <form action="{% url 'cadastro:cadastro' %}" method="POST"> {% csrf_token %}
             <div class="row">
                 <div class="col-md">
                     <p>Nome:</p>
