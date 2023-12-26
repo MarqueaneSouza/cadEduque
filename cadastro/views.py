@@ -25,11 +25,11 @@ def add_professor(request):
         
    
         #Adiciona um novo professor no banco de dados
-        professor = Professor(
-            nome = nome,
-            sobrenome = sobrenome,
-            cargo = cargo,
-            matricula = matricula
+        professor=Professor(
+            nome=nome,
+            sobrenome=sobrenome,
+            cargo=cargo,
+            matricula=matricula
         )
         #Salva o professor no banco de dados
         professor.save()
@@ -42,3 +42,5 @@ def add_professor(request):
 
         #Retorna uma resposta HTTP simples indicando sucesso (pode ser personalizado)
         return HttpResponse('Cadastro realizado com sucesso')
+    
+    
