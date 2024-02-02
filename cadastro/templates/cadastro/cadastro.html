@@ -21,16 +21,17 @@
 
     <!-- CÓDIGO DO FORMS -->
     <div class="adicionar-professor">
-        <form action="{% url 'cadastro:cadastro' %}" method="POST"> {% csrf_token %}
+        <form action="{% url 'cadastro:cadastro' %}" method="POST"> 
+            {% csrf_token %}
             <div class="row">
                 <div class="col-md">
                     <p>Nome:</p>
-                    <input type="text" class="form-control" placeholder="Primeiro nome" name="nome" value="{{nome}}">
+                    {{ form.nome }}
                 </div>
 
                 <div class="col-md">
                     <p>Sobrenome:</p>
-                    <input type="text" class="form-control" placeholder="Sobrenome" name="sobrenome" value="{{sobrenome}}">
+                    {{ form.sobrenome }}
                 </div>
             </div>
 
@@ -39,12 +40,12 @@
             <div class="row">
                 <div class="col-md">
                     <p>Matrícula:</p>
-                    <input type="text" class="form-control" placeholder="Matrícula" name="matricula" value="{{matricula}}">
+                    {{ form.matricula}}
                 </div>
 
                 <div class="col-md">
                     <p>Cargo:</p>
-                    <input type="text" class="form-control" placeholder="Cargo" name="cargo" value="{{cargo}}">
+                    {{ form.cargo }}
                 </div>
             </div>
 
