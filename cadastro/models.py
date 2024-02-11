@@ -16,8 +16,6 @@ CHOICES_CARGO = [
     ('musica', 'Professor de Música'),
 ]
 
-
-
 class Professor(models.Model):
     nome = models.CharField(max_length=50)
     sobrenome = models.CharField(max_length=50)
@@ -36,3 +34,4 @@ class Funcao(models.Model):
 
     def __str__(self) -> str:
         return self.funcao
+
