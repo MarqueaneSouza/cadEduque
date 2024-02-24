@@ -3,6 +3,7 @@ from django.db.utils import IntegrityError
 from cadastro.models import Funcao, Professor
 
 @pytest.mark.django_db
+# Este marcador garante que o ambiente de teste seja configurado corretamente para permitir o acesso ao banco de dados.
 def test_criar_professor_e_str():
     # Dados de exemplo para criar um Professor
     dados_professor = {
@@ -24,7 +25,7 @@ def test_criar_professor_e_str():
     # Assert para verificar se o método __str__ está implementado corretamente
     assert str(professor) == 'João'
 
-# TESTS FUNCAO
+@pytest.mark.django_db
 def test_str_metodo_funcao():
     # Dados de exemplo para criar uma Funcao
     dados_funcao = {
